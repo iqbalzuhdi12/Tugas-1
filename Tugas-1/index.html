@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../img/favicon.ico">
+        <title>Tugas 1 - (180411100051)Moh. Iqbal Zuhdi Husaeni</title>
+        <link href="../css/bootstrap-custom.min.css" rel="stylesheet">
+        <link href="../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+        <script src="../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../js/bootstrap-3.0.3.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script> 
+    </head>
+
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+            <div class="container">
+
+                <!-- Collapsed navigation -->
+                <div class="navbar-header">
+                    <!-- Expander button -->
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="..">(180411100051)Moh. Iqbal Zuhdi Husaeni</a>
+                </div>
+
+                <!-- Expanded navigation -->
+                <div class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li >
+                                <a href="..">Home</a>
+                            </li>
+                            <li class="active">
+                                <a href="./">Tugas 1</a>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav navbar-right">
+                        <li>
+                            <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li >
+                                <a rel="next" href="..">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li class="disabled">
+                                <a rel="prev" >
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+                <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+        <li class="main active"><a href="#error-in-numerical-computation">Error in numerical computation</a></li>
+            <li><a href="#komputasi-numerik">Komputasi Numerik</a></li>
+            <li><a href="#error">Error</a></li>
+            <li><a href="#deret-maclaurin">Deret Maclaurin</a></li>
+            <li><a href="#implementasi-program">Implementasi Program</a></li>
+    </ul>
+</div></div>
+                <div class="col-md-9" role="main">
+
+<h1 id="error-in-numerical-computation">Error in numerical computation</h1>
+<h4 id="komputasi-numerik">Komputasi Numerik</h4>
+<p>Komputasi numerik bisa dikatakan sebagai penentuan error suatu perhitungan untuk mencapai nilai akurasi. Komputer Numerik bertujuan untuk menentukan suatu akurasi dari hasil perhitungan atau percobaan. Komputer Numerik ini banyak sekali diimplementasikan dalam kehidupan termasuk dunia kedokteran, teknik, ekonomi, dan sains.</p>
+<h4 id="error">Error</h4>
+<p>Error merupakan perbedaan antara hasil penyelesaian suatu model matematik secara numeric dengan penyelesaian secara analitis. Kesalahan yang terjadi sangatlah penting, karena kesalahan dalam pemakaian algoritma pendekatan akan menyebabkan nilai kesalahan yang besar. Sehingga pendekatan metode numerik selalu membahas tingkat kesalahan dan tingkat kecepatan proses yang akan terjadi. Error disini dibagi menjadi 2 :</p>
+<h5 id="1-absolute-error">1. Absolute Error</h5>
+<p>Kesalahan absolut suatu kuantitas adalah nilai absolut dari selisih antara nilai sebenarnya X dan nilai perkiraan x. Ini dilambangkan dengan
+$$
+Ea = |X - x|
+$$</p>
+<h5 id="2-relative-error">2. Relative Error</h5>
+<p>Relative error biasa disebut sebagai kesalahan relatif dari suatu kuantitas adalah rasio kesalahan absolutnya terhadap nilai sebenarnya. Ini dilambangkan dengan Er.
+$$
+Er = |Xt - Xa / Xt|
+$$</p>
+<h4 id="deret-maclaurin">Deret Maclaurin</h4>
+<p>Suatu fungsi f(x) yang memiliki turunan <img alt="f'(x)" src="https://s0.wp.com/latex.php?latex=f%27%28x%29&amp;bg=ffffff&amp;fg=666666&amp;s=0" />, <img alt="f''(x)" src="https://s0.wp.com/latex.php?latex=f%27%27%28x%29&amp;bg=ffffff&amp;fg=666666&amp;s=0" />, <img alt="f'''(x)" src="https://s0.wp.com/latex.php?latex=f%27%27%27%28x%29&amp;bg=ffffff&amp;fg=666666&amp;s=0" />, dan seterusnya yang kontinyu dalam interval <img alt="I" src="https://s0.wp.com/latex.php?latex=I&amp;bg=ffffff&amp;fg=666666&amp;s=0" /> dengan <img alt="a, x \in I" src="https://s0.wp.com/latex.php?latex=a%2C+x+%5Cin+I&amp;bg=ffffff&amp;fg=666666&amp;s=0" /> maka untuk <img alt="x" src="https://s0.wp.com/latex.php?latex=x&amp;bg=ffffff&amp;fg=666666&amp;s=0" /> disekitar <img alt="a" src="https://s0.wp.com/latex.php?latex=a&amp;bg=ffffff&amp;fg=666666&amp;s=0" /> yaitu <img alt="|x -a| &lt; \mathbb{R}" src="https://s0.wp.com/latex.php?latex=%7Cx+-a%7C+%3C+%5Cmathbb%7BR%7D&amp;bg=ffffff&amp;fg=666666&amp;s=0" />, <img alt="f(x)" src="https://s0.wp.com/latex.php?latex=f%28x%29&amp;bg=ffffff&amp;fg=666666&amp;s=0" /> dapat diekspansi kedalam Deret Taylor. Deret Taylor didefinisikan seperti berikut.
+$$
+f(x) = f(a) + {f^1(a) (x-a) \over 1!} + {f^2(a) (x-a)^2 \over 2!} + {f^3(a) (x-a)^3 \over 3!} ... {f^n(a) (x-a)^n \over n!}
+$$
+Deret MacLaurin hampir sama dengan dengan Deret Taylor, hanya saja dalam deret maclaurin nilai a=0, sehingga persamaannya adalah seperti berikut.
+$$
+f(x) = f(0) + {f^1(0)x \over 1!} + {f^2(0)x^2 \over 2!} + {f^3(0)x^3 \over 3!} ... {f^n(0)x^n \over n!}
+$$
+Deret MacLaurin biasa disebut sebagai deret Taylor baku, kerena deret maclaurin merupakan standar atau dasar yang berlaku dengan a=0. Atau persamaan Deret MacLaurin diatas dapat ditulis seperti berikut.
+$$
+f(x) = \sum \limits_{i=0}^{n}  {f^i(0)x^i \over i!}
+$$</p>
+<h3 id="implementasi-program">Implementasi Program</h3>
+<p>membuat program supaya dapaat mengekspansi bilangan e^3x dengan nilai x=1 hingga nilai menjadi kurang dari 0,001 bisa dengan Implementasi Program sebagai berikut.</p>
+<pre><code class="python">#f(x)=e**3x
+import math
+x = 1
+i = 1
+f = 1
+while i&gt;0:
+    e = ((3**i)*x**i)/math.factorial(i)
+    f1 = f+e
+    print(&quot;iterasi ke-&quot;+str(i))
+    print(&quot;Hasil suku lama =&quot;,f)
+    print(&quot;Hasil suku baru =&quot;,f1)
+    h = abs(f-f1) #ini selisih
+    print(&quot;selisih =&quot;,h,&quot;\n&quot;)
+    if h&lt;=0.001:
+        break
+    else:
+        f+=e
+    i+=1        
+print(&quot;jumlah iterasi =&quot;,i)
+</code></pre>
+
+<p>Output :</p>
+<pre><code>iterasi ke-1
+Hasil suku lama = 1
+Hasil suku baru = 4.0
+selisih = 3.0 
+
+iterasi ke-2
+Hasil suku lama = 4.0
+Hasil suku baru = 8.5
+selisih = 4.5 
+
+iterasi ke-3
+Hasil suku lama = 8.5
+Hasil suku baru = 13.0
+selisih = 4.5 
+
+iterasi ke-4
+Hasil suku lama = 13.0
+Hasil suku baru = 16.375
+selisih = 3.375 
+
+iterasi ke-5
+Hasil suku lama = 16.375
+Hasil suku baru = 18.4
+selisih = 2.0249999999999986 
+
+iterasi ke-6
+Hasil suku lama = 18.4
+Hasil suku baru = 19.412499999999998
+selisih = 1.0124999999999993 
+
+iterasi ke-7
+Hasil suku lama = 19.412499999999998
+Hasil suku baru = 19.846428571428568
+selisih = 0.4339285714285701 
+
+iterasi ke-8
+Hasil suku lama = 19.846428571428568
+Hasil suku baru = 20.009151785714284
+selisih = 0.162723214285716 
+
+iterasi ke-9
+Hasil suku lama = 20.009151785714284
+Hasil suku baru = 20.063392857142855
+selisih = 0.05424107142857082 
+
+iterasi ke-10
+Hasil suku lama = 20.063392857142855
+Hasil suku baru = 20.079665178571425
+selisih = 0.016272321428569825 
+
+iterasi ke-11
+Hasil suku lama = 20.079665178571425
+Hasil suku baru = 20.08410308441558
+selisih = 0.004437905844156376 
+
+iterasi ke-12
+Hasil suku lama = 20.08410308441558
+Hasil suku baru = 20.08521256087662
+selisih = 0.001109476461039094 
+
+iterasi ke-13
+Hasil suku lama = 20.08521256087662
+Hasil suku baru = 20.08546859390609
+selisih = 0.0002560330294691937 
+
+jumlah iterasi = 13
+</code></pre>
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {inlineMath: [['$$','$$']]}
+});
+</script>
+
+<p><script type="text/javascript" async
+  src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML">
+</script></p></div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>
+            var base_url = "..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../js/base.js" defer></script>
+        <script src="../search/main.js" defer></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Search</h4>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                </p>
+                <form role="form">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="Keyboard Shortcuts Modal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Keyboard Shortcuts</h4>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>
